@@ -1,0 +1,16 @@
+---
+services:
+  db:
+    image: postgres
+    # (Optional) Expose Container outside
+    # ports:
+    #   - 5432:5432
+    restart: unless-stopped
+    environment:
+      POSTGRES_PASSWORD: example
+
+  adminer:
+    image: adminer
+    restart: unless-stopped
+    ports:
+      - 8080:8080

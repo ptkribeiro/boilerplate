@@ -1,0 +1,10 @@
+---
+services:
+  dashy:
+    image: lissy93/dashy
+    container_name: dashy
+    ports:
+      - 8080:80
+    volumes:
+      - /etc/dashy/conf.yml:/app/public/conf.yml
+    restart: unless-stopped

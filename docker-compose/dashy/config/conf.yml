@@ -1,0 +1,43 @@
+appConfig:
+  theme: one-dark
+  layout: auto
+  iconSize: medium
+  language: pt
+pageInfo:
+  title: Dashy
+  description: Welcome to your new dashboard!
+  navLinks:
+    - title: GitHub
+      path: https://github.com/Lissy93/dashy
+    - title: Documentation
+      path: https://dashy.to/docs
+  footerText: ''
+sections:
+  - name: Home Server
+    icon: fas fa-rocket
+    items:
+      - title: Nginx
+        description: ''
+        icon: hl-nginx-proxy-manager
+        url: http://127.0.0.1
+        statusCheck: true
+      - title: Portainer
+        description: ''
+        icon: hl-portainer-alt
+        url: http://127.0.0.1
+        statusCheck: true
+      - title: EdgeMax Router
+        icon: hl-ubiquiti
+        url: http://10.0.0.1
+    - name: Serviços
+    displayData:
+      sortBy: default
+      rows: 1
+      cols: 1
+      collapsed: false
+      hideForGuests: false
+    items:
+      - title: Metabase
+        icon: hl-metabase
+        url: https://127.0.0.1
+        statusCheck: true
